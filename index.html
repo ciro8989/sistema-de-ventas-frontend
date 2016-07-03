@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de ventas</title>
+    </head>  
+    <body ng-app="loginModule">  
+        <div ng-controller="loginCtrl as vm"> 
+            <form>
+                <span>User Name: <input type="text" data-ng-model="username"></span>
+                <span>Password: <input type="password" data-ng-model="password"></span>
+                <button ng-click="vm.login(username, password);">Log in</button>
+            </form>
+            <div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                PRUEBA: {{prueba}}
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="loginController.js"></script>
+    </body>  
+</html>  
